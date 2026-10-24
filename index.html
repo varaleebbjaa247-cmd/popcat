@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popcat Clicker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>Popcat Clicker</h1>
+      <p class="hint">คลิกเจ้าเหมียวเพื่อสะสมคะแนน!</p>
+
+      <button class="cat" id="cat" type="button" aria-label="คลิกเพื่อสะสมคะแนน">
+        <span class="ears" aria-hidden="true"><i></i><i></i></span>
+        <span class="face" aria-hidden="true">
+          <span class="eyes"><i></i><i></i></span>
+          <span class="cheeks"><i></i><i></i></span>
+          <span class="mouth"><i></i></span>
+        </span>
+      </button>
+
+      <section class="stats" aria-live="polite">
+        <div><span class="label">คะแนน</span><strong id="score">0</strong></div>
+        <div><span class="label">คลิก/วินาที</span><strong id="cps">0.0</strong></div>
+        <div><span class="label">คะแนนสูงสุด</span><strong id="best">0</strong></div>
+      </section>
+      <button class="reset" id="reset" type="button">เริ่มใหม่</button>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
